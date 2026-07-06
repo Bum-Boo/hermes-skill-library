@@ -12,6 +12,28 @@
         "gstack-investigate"
       ]
     },
+    "agent-engineering": {
+      "title": "Agent engineering workflows",
+      "description": "Delegation workflows for coding-agent CLIs with bounded prompts and independent verification.",
+      "skills": [
+        "ai-coding-agents"
+      ]
+    },
+    "research-workflows": {
+      "title": "Research workflows",
+      "description": "Source intake, monitoring, ML experiment, evaluation, and evidence-backed reporting workflows.",
+      "skills": [
+        "research-intake-and-monitoring",
+        "ml-research-and-evaluation-workflows"
+      ]
+    },
+    "comfyui-image-workflows": {
+      "title": "ComfyUI image workflows",
+      "description": "ComfyUI image generation, batch execution, output verification, and troubleshooting patterns.",
+      "skills": [
+        "comfyui-image-workflows"
+      ]
+    },
     "wsl-operator": {
       "title": "WSL operator workflows",
       "description": "Windows/WSL path reporting and GUI launcher workflows.",

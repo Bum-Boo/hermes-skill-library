@@ -7,7 +7,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 if [[ -z "$COLLECTION" ]]; then
   echo "Usage: $0 <collection> [target-skills-dir]" >&2
-  echo "Collections: gstack-safe, wsl-operator, oauth-browser-handoff, profile-context-diet" >&2
+  echo "Collections: gstack-safe, agent-engineering, research-workflows, comfyui-image-workflows, wsl-operator, oauth-browser-handoff, profile-context-diet" >&2
   exit 2
 fi
 
@@ -16,6 +16,19 @@ case "$COLLECTION" in
   gstack-safe)
     mkdir -p "$TARGET/gstack-safe"
     cp -R "$ROOT/skills/gstack-safe/." "$TARGET/gstack-safe/"
+    ;;
+  agent-engineering)
+    mkdir -p "$TARGET/autonomous-ai-agents"
+    cp -R "$ROOT/skills/autonomous-ai-agents/ai-coding-agents" "$TARGET/autonomous-ai-agents/"
+    ;;
+  research-workflows)
+    mkdir -p "$TARGET/research"
+    cp -R "$ROOT/skills/research/research-intake-and-monitoring" "$TARGET/research/"
+    cp -R "$ROOT/skills/research/ml-research-and-evaluation-workflows" "$TARGET/research/"
+    ;;
+  comfyui-image-workflows)
+    mkdir -p "$TARGET/creative"
+    cp -R "$ROOT/skills/creative/comfyui-image-workflows" "$TARGET/creative/"
     ;;
   wsl-operator)
     mkdir -p "$TARGET/software-development"
