@@ -1,0 +1,15 @@
+# Local/runtime artifacts
+.env
+.env.*
+*.log
+*.tmp
+*.bak
+__pycache__/
+.pytest_cache/
+node_modules/
+dist/
+build/
+.DS_Store
+
+# Archives generated locally
+*.zip

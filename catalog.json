@@ -1,0 +1,38 @@
+{
+  "name": "hermes-skill-library",
+  "repository": "https://github.com/bumboo/hermes-skill-library",
+  "collections": {
+    "gstack-safe": {
+      "title": "gstack-safe workflows",
+      "description": "Spec, review, and investigation workflows for safer agent work.",
+      "skills": [
+        "gstack-safe",
+        "gstack-spec",
+        "gstack-review",
+        "gstack-investigate"
+      ]
+    },
+    "wsl-operator": {
+      "title": "WSL operator workflows",
+      "description": "Windows/WSL path reporting and GUI launcher workflows.",
+      "skills": [
+        "windows-wsl-path-translation",
+        "windows-wsl-gui-launchers"
+      ]
+    },
+    "oauth-browser-handoff": {
+      "title": "OAuth browser handoff",
+      "description": "Safe human-in-the-browser OAuth setup for headless, WSL, or remote agents.",
+      "skills": [
+        "oauth-browser-handoff"
+      ]
+    },
+    "profile-context-diet": {
+      "title": "Hermes profile context diet",
+      "description": "Audit and reduce Hermes profile context weight without losing durable knowledge.",
+      "skills": [
+        "hermes-profile-context-diet"
+      ]
+    }
+  }
+}
