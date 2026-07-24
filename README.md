@@ -21,6 +21,11 @@ The repo is a library, not a single-purpose package. Keep adding focused skill f
 | [`wsl-operator`](collections/wsl-operator/) | Hermes runs inside WSL and the user needs Windows paths or launchers. | `windows-wsl-path-translation`, `windows-wsl-gui-launchers` |
 | [`oauth-browser-handoff`](collections/oauth-browser-handoff/) | A headless/WSL/remote agent needs the user to complete OAuth in a browser. | `oauth-browser-handoff` |
 | [`profile-context-diet`](collections/profile-context-diet/) | A Hermes profile has too much prompt weight, stale memory, or skill sprawl. | `hermes-profile-context-diet` |
+| [`hermes-profile-operations`](collections/hermes-profile-operations/) | You operate multiple Hermes profiles and need safe config, storage, and context maintenance. | `hermes-profile-config-inspection`, `hermes-profile-storage-audit`, `hermes-profile-context-diet` |
+| [`local-development-safety`](collections/local-development-safety/) | You need a narrow local code change with fresh completion evidence. | `local-code-change-workflow`, `verification-before-completion` |
+| [`github-publishing`](collections/github-publishing/) | You publish repositories or skills from WSL and must verify remote state. | `wsl-github-release-workflows`, `public-skill-library-maintenance` |
+| [`telegram-operator`](collections/telegram-operator/) | You report agent progress and results through Telegram. | `telegram-rich-message-reporting` |
+| [`computer-use-safety`](collections/computer-use-safety/) | You drive desktop applications without stealing focus or skipping verification. | `computer-use-background-safety` |
 
 ## Install all skills
 
@@ -52,6 +57,11 @@ If your Hermes CLI does not support `--profile` for `skills list`, start a chat 
 ./scripts/install-collection.sh wsl-operator
 ./scripts/install-collection.sh oauth-browser-handoff
 ./scripts/install-collection.sh profile-context-diet
+./scripts/install-collection.sh hermes-profile-operations
+./scripts/install-collection.sh local-development-safety
+./scripts/install-collection.sh github-publishing
+./scripts/install-collection.sh telegram-operator
+./scripts/install-collection.sh computer-use-safety
 ```
 
 For a single profile:

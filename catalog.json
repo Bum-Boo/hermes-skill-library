@@ -55,6 +55,45 @@
       "skills": [
         "hermes-profile-context-diet"
       ]
+    },
+    "hermes-profile-operations": {
+      "title": "Hermes profile operations",
+      "description": "Configuration inspection, storage auditing, and context maintenance for multi-profile Hermes installations.",
+      "skills": [
+        "hermes-profile-config-inspection",
+        "hermes-profile-storage-audit",
+        "hermes-profile-context-diet"
+      ]
+    },
+    "local-development-safety": {
+      "title": "Local development safety",
+      "description": "Narrow reversible code changes and fresh evidence before completion claims.",
+      "skills": [
+        "local-code-change-workflow",
+        "verification-before-completion"
+      ]
+    },
+    "github-publishing": {
+      "title": "GitHub publishing workflows",
+      "description": "WSL-aware GitHub publication and public skill-library maintenance.",
+      "skills": [
+        "wsl-github-release-workflows",
+        "public-skill-library-maintenance"
+      ]
+    },
+    "telegram-operator": {
+      "title": "Telegram operator reporting",
+      "description": "Compact, truthful, platform-safe progress and completion reporting.",
+      "skills": [
+        "telegram-rich-message-reporting"
+      ]
+    },
+    "computer-use-safety": {
+      "title": "Computer use safety",
+      "description": "Background-first desktop control with accessible targeting, verification, and safe escalation.",
+      "skills": [
+        "computer-use-background-safety"
+      ]
     }
   }
 }
