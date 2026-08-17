@@ -94,6 +94,13 @@
       "skills": [
         "computer-use-background-safety"
       ]
+    },
+    "web-interface-verification": {
+      "title": "Web interface verification",
+      "description": "Responsive interaction debugging across viewport widths and pointer capabilities.",
+      "skills": [
+        "responsive-touch-interface-verification"
+      ]
     }
   }
 }

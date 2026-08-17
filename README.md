@@ -26,6 +26,7 @@ The repo is a library, not a single-purpose package. Keep adding focused skill f
 | [`github-publishing`](collections/github-publishing/) | You publish repositories or skills from WSL and must verify remote state. | `wsl-github-release-workflows`, `public-skill-library-maintenance` |
 | [`telegram-operator`](collections/telegram-operator/) | You report agent progress and results through Telegram. | `telegram-rich-message-reporting` |
 | [`computer-use-safety`](collections/computer-use-safety/) | You drive desktop applications without stealing focus or skipping verification. | `computer-use-background-safety` |
+| [`web-interface-verification`](collections/web-interface-verification/) | A responsive interface fails at tablet widths or mixes hover and touch behavior. | `responsive-touch-interface-verification` |
 
 ## Install all skills
 
@@ -62,6 +63,7 @@ If your Hermes CLI does not support `--profile` for `skills list`, start a chat 
 ./scripts/install-collection.sh github-publishing
 ./scripts/install-collection.sh telegram-operator
 ./scripts/install-collection.sh computer-use-safety
+./scripts/install-collection.sh web-interface-verification
 ```
 
 For a single profile:
