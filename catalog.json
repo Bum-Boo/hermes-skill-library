@@ -101,6 +101,13 @@
       "skills": [
         "responsive-touch-interface-verification"
       ]
+    },
+    "repository-maintenance": {
+      "title": "Repository maintenance workflows",
+      "description": "Pinned-baseline auditing and safe maintenance for forks, mirrors, and vendored snapshots.",
+      "skills": [
+        "downstream-source-maintenance"
+      ]
     }
   }
 }
