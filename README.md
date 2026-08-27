@@ -1,146 +1,77 @@
 # Hermes Skill Library
 
-A curated skill library for Hermes Agent-style assistants.
+**English** | [한국어](README.ko.md) | [日本語](README.ja.md) | [中文](README.zh-CN.md)
 
-This repository is intended to live at:
+A curated library of reusable skills for Hermes Agent-style assistants. This is a collection rather than a single-purpose package: install the whole library or select one purpose-based collection.
 
-```text
-https://github.com/bumboo/hermes-skill-library
-```
+## Collections
 
-The repo is a library, not a single-purpose package. Keep adding focused skill folders and updating the catalog README as the library grows.
+| Collection | Purpose |
+|---|---|
+| [`gstack-safe`](collections/gstack-safe/) | Evidence-first specification, review, and investigation. |
+| [`agent-engineering`](collections/agent-engineering/) | Delegating bounded work to coding-agent CLIs. |
+| [`research-workflows`](collections/research-workflows/) | Source intake, monitoring, ML experiments, and evaluation evidence. |
+| [`comfyui-image-workflows`](collections/comfyui-image-workflows/) | ComfyUI generation, batching, verification, and troubleshooting. |
+| [`wsl-operator`](collections/wsl-operator/) | Windows/WSL paths and GUI launchers. |
+| [`oauth-browser-handoff`](collections/oauth-browser-handoff/) | Human browser completion of OAuth from headless, WSL, or remote agents. |
+| [`profile-context-diet`](collections/profile-context-diet/) | Reducing stale or excessive Hermes profile context. |
+| [`hermes-profile-operations`](collections/hermes-profile-operations/) | Multi-profile configuration, storage, and context maintenance. |
+| [`local-development-safety`](collections/local-development-safety/) | Narrow local changes with fresh completion evidence. |
+| [`github-publishing`](collections/github-publishing/) | WSL-aware repository and skill publishing with remote verification. |
+| [`telegram-operator`](collections/telegram-operator/) | Compact, truthful Telegram progress and result reporting. |
+| [`computer-use-safety`](collections/computer-use-safety/) | Background-first desktop control and safe escalation. |
+| [`web-interface-verification`](collections/web-interface-verification/) | Responsive, touch, hover, and tablet-width verification. |
+| [`repository-maintenance`](collections/repository-maintenance/) | Auditing forks, mirrors, vendored snapshots, and downstream codebases. |
 
-## Current collections
-
-| Collection | Use when | Skills |
-|---|---|---|
-| [`gstack-safe`](collections/gstack-safe/) | You need evidence-first spec, review, or investigation workflows before editing. | `gstack-safe`, `gstack-spec`, `gstack-review`, `gstack-investigate` |
-| [`agent-engineering`](collections/agent-engineering/) | You delegate software work to coding-agent CLIs and need bounded prompts plus verification. | `ai-coding-agents` |
-| [`research-workflows`](collections/research-workflows/) | You collect sources, monitor research inputs, or manage ML evaluation evidence. | `research-intake-and-monitoring`, `ml-research-and-evaluation-workflows` |
-| [`comfyui-image-workflows`](collections/comfyui-image-workflows/) | You generate, batch, or troubleshoot images with ComfyUI workflows. | `comfyui-image-workflows` |
-| [`wsl-operator`](collections/wsl-operator/) | Hermes runs inside WSL and the user needs Windows paths or launchers. | `windows-wsl-path-translation`, `windows-wsl-gui-launchers` |
-| [`oauth-browser-handoff`](collections/oauth-browser-handoff/) | A headless/WSL/remote agent needs the user to complete OAuth in a browser. | `oauth-browser-handoff` |
-| [`profile-context-diet`](collections/profile-context-diet/) | A Hermes profile has too much prompt weight, stale memory, or skill sprawl. | `hermes-profile-context-diet` |
-| [`hermes-profile-operations`](collections/hermes-profile-operations/) | You operate multiple Hermes profiles and need safe config, storage, and context maintenance. | `hermes-profile-config-inspection`, `hermes-profile-storage-audit`, `hermes-profile-context-diet` |
-| [`local-development-safety`](collections/local-development-safety/) | You need a narrow local code change with fresh completion evidence. | `local-code-change-workflow`, `verification-before-completion` |
-| [`github-publishing`](collections/github-publishing/) | You publish repositories or skills from WSL and must verify remote state. | `wsl-github-release-workflows`, `public-skill-library-maintenance` |
-| [`telegram-operator`](collections/telegram-operator/) | You report agent progress and results through Telegram. | `telegram-rich-message-reporting` |
-| [`computer-use-safety`](collections/computer-use-safety/) | You drive desktop applications without stealing focus or skipping verification. | `computer-use-background-safety` |
-| [`web-interface-verification`](collections/web-interface-verification/) | A responsive interface fails at tablet widths or mixes hover and touch behavior. | `responsive-touch-interface-verification` |
-| [`repository-maintenance`](collections/repository-maintenance/) | You audit or maintain a fork, mirror, vendored snapshot, or other downstream codebase. | `downstream-source-maintenance` |
+Collection pages list their included skills and usage notes. The machine-readable inventory is in [`catalog.json`](catalog.json).
 
 ## Install all skills
 
-Install globally for the current OS user:
-
 ```bash
-git clone https://github.com/bumboo/hermes-skill-library.git
+git clone https://github.com/Bum-Boo/hermes-skill-library.git
 cd hermes-skill-library
 ./scripts/install.sh
 hermes skills list
 ```
 
-Install into one Hermes profile only:
-
 ```bash
+# Install for one profile
 ./scripts/install.sh ~/.hermes/profiles/<profile>/skills
 hermes --profile <profile> skills list
 ```
 
-If your Hermes CLI does not support `--profile` for `skills list`, start a chat with that profile and ask it to list or load the installed skill.
+The default target is `~/.hermes/skills`. If your Hermes CLI does not support `--profile` for `skills list`, start a chat with that profile and ask it to list or load the installed skill.
 
-## Install one collection only
+> The installer copies the library into the target and may replace files with the same paths. Review the source and use an appropriate target before running it.
 
-```bash
-./scripts/install-collection.sh gstack-safe
-./scripts/install-collection.sh agent-engineering
-./scripts/install-collection.sh research-workflows
-./scripts/install-collection.sh comfyui-image-workflows
-./scripts/install-collection.sh wsl-operator
-./scripts/install-collection.sh oauth-browser-handoff
-./scripts/install-collection.sh profile-context-diet
-./scripts/install-collection.sh hermes-profile-operations
-./scripts/install-collection.sh local-development-safety
-./scripts/install-collection.sh github-publishing
-./scripts/install-collection.sh telegram-operator
-./scripts/install-collection.sh computer-use-safety
-./scripts/install-collection.sh web-interface-verification
-./scripts/install-collection.sh repository-maintenance
-```
-
-For a single profile:
+## Install one collection
 
 ```bash
+./scripts/install-collection.sh <collection-name>
 ./scripts/install-collection.sh comfyui-image-workflows ~/.hermes/profiles/<profile>/skills
 ```
+
+Use a collection name from the table above. The collection installer accepts only names implemented by [`scripts/install-collection.sh`](scripts/install-collection.sh); an unknown name exits with an error.
 
 ## Repository layout
 
 ```text
-skills/<category>/<skill-name>/SKILL.md      # installable Hermes skills
-collections/<collection>/README.md          # human-facing usage notes by purpose
-scripts/install.sh                          # install every skill
-scripts/install-collection.sh               # install one purpose-based collection
-SECURITY.md
-LICENSE
+skills/<category>/<skill-name>/SKILL.md  Installable skills
+collections/<collection>/README.md      Purpose-based collection notes
+scripts/install.sh                      Install every skill
+scripts/install-collection.sh           Install one collection
+catalog.json                            Collection inventory
+SECURITY.md                             Security policy
+LICENSE                                 MIT license
 ```
 
-## How to add a new skill
+## Contributing safely
 
-1. Create a focused skill folder:
+Place each skill at `skills/<category>/<skill-name>/SKILL.md` with valid Hermes frontmatter, then add or update its collection documentation and `catalog.json`. Before sharing a change, test installation in a temporary directory and inspect the repository for credentials, private paths, account identifiers, browser profiles, and customer data. Never commit real secret values. See [`SECURITY.md`](SECURITY.md).
 
-   ```text
-   skills/<category>/<skill-name>/SKILL.md
-   ```
+## Attribution request
 
-2. Include valid Hermes skill frontmatter:
-
-   ```yaml
-   ---
-   name: skill-name
-   description: "Use when <trigger>; <behavior>."
-   version: 1.0.0
-   author: bumboo / Hermes Skill Library contributors
-   license: MIT
-   metadata:
-     hermes:
-       tags: [tag1, tag2]
-       related_skills: []
-   ---
-   ```
-
-3. Add a collection README or update an existing one.
-4. Update the table in this README.
-5. Run the private-info scan below.
-6. Test install into a temporary directory before publishing.
-
-## Private information check before publishing
-
-Run from the repository root:
-
-```bash
-grep -RInE '(/home/[^ /]+|/mnt/c/Users/[^ /]+|[A-Za-z0-9_]*TOKEN|SECRET|PASSWORD|PRIVATE KEY|chat_id|bot_token)' .
-```
-
-Review all matches manually. Safety-warning words are acceptable; real values, private account IDs, private local paths, customer names, and credentials are not.
-
-## Local install verification
-
-```bash
-tmpdir="$(mktemp -d)"
-./scripts/install.sh "$tmpdir"
-find "$tmpdir" -name SKILL.md | sort
-```
-
-## Safety policy
-
-Skills in this library should prefer:
-
-- read-only inspection before mutation;
-- explicit user approval before publishing, pushing, deploying, deleting, or using credentials;
-- small scoped actions with verification;
-- source evidence over stale memory;
-- redaction of secrets, tokens, cookies, browser profiles, and private data.
+If you share this library or publish derivative work, a courteous mention of **@Bum-Boo** and the [original repository](https://github.com/Bum-Boo/hermes-skill-library) would be appreciated. This is a request for acknowledgement, not an additional or modified license condition.
 
 ## License
 
