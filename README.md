@@ -22,6 +22,7 @@ A curated library of reusable skills for Hermes Agent-style assistants. This is 
 | [`computer-use-safety`](collections/computer-use-safety/) | Background-first desktop control and safe escalation. |
 | [`web-interface-verification`](collections/web-interface-verification/) | Responsive, touch, hover, and tablet-width verification. |
 | [`repository-maintenance`](collections/repository-maintenance/) | Auditing forks, mirrors, vendored snapshots, and downstream codebases. |
+| [`durable-operations`](collections/durable-operations/) | Persistent Kanban execution, bounded recovery, and artifact-backed completion. |
 
 Collection pages list their included skills and usage notes. The machine-readable inventory is in [`catalog.json`](catalog.json).
 

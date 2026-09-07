@@ -108,6 +108,13 @@
       "skills": [
         "downstream-source-maintenance"
       ]
+    },
+    "durable-operations": {
+      "title": "Durable operations workflows",
+      "description": "Persistent Kanban execution, bounded recovery, shared-writer safety, and artifact-backed completion.",
+      "skills": [
+        "durable-kanban-workflows"
+      ]
     }
   }
 }
