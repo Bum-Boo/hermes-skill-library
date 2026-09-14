@@ -1,10 +1,11 @@
 # Research workflows
 
-Source intake, monitoring, ML experiment, evaluation, and evidence-backed reporting workflows.
+Source intake, monitoring, academic manuscript readiness, ML experiment, evaluation, and evidence-backed reporting workflows.
 
 ## Skills in this collection
 
 - `research-intake-and-monitoring`
+- `academic-manuscript-readiness`
 - `ml-research-and-evaluation-workflows`
 
 ## Install only this collection
@@ -27,6 +28,10 @@ hermes --profile <profile> skills list
 
 ```text
 Use research-intake-and-monitoring to collect source evidence for this topic before summarizing.
+```
+
+```text
+Use academic-manuscript-readiness to audit this pre-data abstract without inventing results.
 ```
 
 ```text

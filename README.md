@@ -10,7 +10,7 @@ A curated library of reusable skills for Hermes Agent-style assistants. This is 
 |---|---|
 | [`gstack-safe`](collections/gstack-safe/) | Evidence-first specification, review, and investigation. |
 | [`agent-engineering`](collections/agent-engineering/) | Delegating bounded work to coding-agent CLIs. |
-| [`research-workflows`](collections/research-workflows/) | Source intake, monitoring, ML experiments, and evaluation evidence. |
+| [`research-workflows`](collections/research-workflows/) | Source intake, manuscript readiness, ML experiments, and evaluation evidence. |
 | [`comfyui-image-workflows`](collections/comfyui-image-workflows/) | ComfyUI generation, batching, verification, and troubleshooting. |
 | [`wsl-operator`](collections/wsl-operator/) | Windows/WSL paths and GUI launchers. |
 | [`oauth-browser-handoff`](collections/oauth-browser-handoff/) | Human browser completion of OAuth from headless, WSL, or remote agents. |

@@ -21,9 +21,10 @@
     },
     "research-workflows": {
       "title": "Research workflows",
-      "description": "Source intake, monitoring, ML experiment, evaluation, and evidence-backed reporting workflows.",
+      "description": "Source intake, monitoring, manuscript readiness, ML experiment, evaluation, and evidence-backed reporting workflows.",
       "skills": [
         "research-intake-and-monitoring",
+        "academic-manuscript-readiness",
         "ml-research-and-evaluation-workflows"
       ]
     },
