@@ -22,6 +22,7 @@ Hermes Agent 系アシスタント向けの再利用可能なスキルライブ�
 | [`computer-use-safety`](collections/computer-use-safety/) | バックグラウンド優先のデスクトップ操作と安全な段階移行 |
 | [`web-interface-verification`](collections/web-interface-verification/) | レスポンシブ・タッチ・ホバー・タブレット幅の検証 |
 | [`repository-maintenance`](collections/repository-maintenance/) | フォーク・ミラー・ベンダースナップショット・下流コードの監査 |
+| [`artifact-recovery`](collections/artifact-recovery/) | 曖昧な過去のローカルファイルを根拠に基づいて復元し安全に受け渡す |
 
 各リンクには収録スキルと利用案内があります。機械可読の一覧は [`catalog.json`](catalog.json) です。
 

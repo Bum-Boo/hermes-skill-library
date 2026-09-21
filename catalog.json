@@ -116,6 +116,13 @@
       "skills": [
         "durable-kanban-workflows"
       ]
+    },
+    "artifact-recovery": {
+      "title": "Local artifact recovery",
+      "description": "Evidence-based identification and safe delivery of ambiguous prior local files.",
+      "skills": [
+        "local-artifact-recovery"
+      ]
     }
   }
 }

@@ -22,6 +22,7 @@ Hermes Agent 계열 어시스턴트를 위한 재사용 가능 스킬 모음입�
 | [`computer-use-safety`](collections/computer-use-safety/) | 백그라운드 우선 데스크톱 제어와 안전한 단계 상승 |
 | [`web-interface-verification`](collections/web-interface-verification/) | 반응형·터치·호버·태블릿 너비 검증 |
 | [`repository-maintenance`](collections/repository-maintenance/) | 포크·미러·벤더 스냅샷·다운스트림 감사 |
+| [`artifact-recovery`](collections/artifact-recovery/) | 모호한 이전 로컬 파일의 근거 기반 복구와 안전한 전달 |
 
 각 컬렉션 페이지에서 포함 스킬과 사용 안내를 확인하실 수 있습니다. 기계 판독용 목록은 [`catalog.json`](catalog.json)에 있습니다.
 

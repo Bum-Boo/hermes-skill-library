@@ -22,6 +22,7 @@
 | [`computer-use-safety`](collections/computer-use-safety/) | 后台优先的桌面控制与安全升级路径 |
 | [`web-interface-verification`](collections/web-interface-verification/) | 响应式、触控、悬停与平板宽度验证 |
 | [`repository-maintenance`](collections/repository-maintenance/) | 审计分叉、镜像、供应商快照与下游代码库 |
+| [`artifact-recovery`](collections/artifact-recovery/) | 基于证据恢复并安全交付难以辨认的既有本地文件 |
 
 各集合页面列出了所含技能和使用说明，机器可读清单位于 [`catalog.json`](catalog.json)。
 
