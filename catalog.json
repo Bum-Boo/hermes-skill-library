@@ -14,9 +14,10 @@
     },
     "agent-engineering": {
       "title": "Agent engineering workflows",
-      "description": "Delegation workflows for coding-agent CLIs with bounded prompts and independent verification.",
+      "description": "Safe coding-agent delegation and collaborative visual-editor architecture workflows.",
       "skills": [
-        "ai-coding-agents"
+        "ai-coding-agents",
+        "collaborative-visual-editor-architecture"
       ]
     },
     "research-workflows": {

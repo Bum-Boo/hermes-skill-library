@@ -1,10 +1,11 @@
 # Agent engineering workflows
 
-Workflows for delegating to coding agents and verifying their outputs safely.
+Workflows for delegating to coding agents safely and designing multi-user visual editors with explicit system boundaries.
 
 ## Skills in this collection
 
 - `ai-coding-agents`
+- `collaborative-visual-editor-architecture`
 
 ## Install only this collection
 
@@ -26,6 +27,8 @@ hermes --profile <profile> skills list
 
 ```text
 Use ai-coding-agents to write a bounded Codex prompt for this bug. Do not run the agent until I approve.
+
+Use collaborative-visual-editor-architecture to separate collaboration, persistence, and execution for this shared node editor.
 ```
 
 ## Agent guidance

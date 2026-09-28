@@ -18,8 +18,9 @@ case "$COLLECTION" in
     cp -R "$ROOT/skills/gstack-safe/." "$TARGET/gstack-safe/"
     ;;
   agent-engineering)
-    mkdir -p "$TARGET/autonomous-ai-agents"
+    mkdir -p "$TARGET/autonomous-ai-agents" "$TARGET/software-development"
     cp -R "$ROOT/skills/autonomous-ai-agents/ai-coding-agents" "$TARGET/autonomous-ai-agents/"
+    cp -R "$ROOT/skills/software-development/collaborative-visual-editor-architecture" "$TARGET/software-development/"
     ;;
   research-workflows)
     mkdir -p "$TARGET/research"
