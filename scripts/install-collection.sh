@@ -7,7 +7,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 if [[ -z "$COLLECTION" ]]; then
   echo "Usage: $0 <collection> [target-skills-dir]" >&2
-  echo "Collections: gstack-safe, agent-engineering, research-workflows, comfyui-image-workflows, wsl-operator, oauth-browser-handoff, profile-context-diet, hermes-profile-operations, local-development-safety, github-publishing, telegram-operator, computer-use-safety, web-interface-verification, repository-maintenance, durable-operations, artifact-recovery" >&2
+  echo "Collections: gstack-safe, agent-engineering, research-workflows, comfyui-image-workflows, wsl-operator, oauth-browser-handoff, profile-context-diet, hermes-profile-operations, local-development-safety, github-publishing, telegram-operator, computer-use-safety, web-interface-verification, repository-maintenance, durable-operations, artifact-recovery, local-audio-transcription" >&2
   exit 2
 fi
 
@@ -84,6 +84,10 @@ case "$COLLECTION" in
   artifact-recovery)
     mkdir -p "$TARGET/productivity"
     cp -R "$ROOT/skills/productivity/local-artifact-recovery" "$TARGET/productivity/"
+    ;;
+  local-audio-transcription)
+    mkdir -p "$TARGET/productivity"
+    cp -R "$ROOT/skills/productivity/local-audio-transcription" "$TARGET/productivity/"
     ;;
   *)
     echo "Unknown collection: $COLLECTION" >&2

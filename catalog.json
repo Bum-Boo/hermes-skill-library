@@ -124,6 +124,13 @@
       "skills": [
         "local-artifact-recovery"
       ]
+    },
+    "local-audio-transcription": {
+      "title": "Local audio transcription",
+      "description": "Local ASR with measured inputs, incremental timestamps, honest diarization boundaries, and artifact verification.",
+      "skills": [
+        "local-audio-transcription"
+      ]
     }
   }
 }
