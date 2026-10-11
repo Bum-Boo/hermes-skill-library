@@ -11,7 +11,6 @@ if [[ -z "$COLLECTION" ]]; then
   exit 2
 fi
 
-mkdir -p "$TARGET"
 case "$COLLECTION" in
   gstack-safe)
     mkdir -p "$TARGET/gstack-safe"
