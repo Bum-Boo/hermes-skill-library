@@ -1,10 +1,11 @@
 # Research workflows
 
-Source intake, monitoring, academic manuscript readiness, ML experiment, evaluation, and evidence-backed reporting workflows.
+Source intake, monitoring, citation grounding, academic manuscript readiness, ML experiment, evaluation, and evidence-backed reporting workflows.
 
 ## Skills in this collection
 
 - `research-intake-and-monitoring`
+- `grounded-citations`
 - `academic-manuscript-readiness`
 - `ml-research-and-evaluation-workflows`
 
@@ -28,6 +29,10 @@ hermes --profile <profile> skills list
 
 ```text
 Use research-intake-and-monitoring to collect source evidence for this topic before summarizing.
+```
+
+```text
+Use grounded-citations to assign retrieved sources stable ids and verify every inline citation before delivery.
 ```
 
 ```text

@@ -25,6 +25,7 @@ case "$COLLECTION" in
   research-workflows)
     mkdir -p "$TARGET/research"
     cp -R "$ROOT/skills/research/research-intake-and-monitoring" "$TARGET/research/"
+    cp -R "$ROOT/skills/research/grounded-citations" "$TARGET/research/"
     cp -R "$ROOT/skills/research/academic-manuscript-readiness" "$TARGET/research/"
     cp -R "$ROOT/skills/research/ml-research-and-evaluation-workflows" "$TARGET/research/"
     ;;
