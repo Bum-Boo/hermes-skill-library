@@ -54,7 +54,9 @@ The default target is `~/.hermes/skills`. If your Hermes CLI does not support `-
 ./scripts/install-collection.sh comfyui-image-workflows ~/.hermes/profiles/<profile>/skills
 ```
 
-Use a collection name from the table above. The collection installer accepts only names implemented by [`scripts/install-collection.sh`](scripts/install-collection.sh); an unknown name exits with an error.
+Use a collection name from the table above. The collection installer accepts only names implemented by [`scripts/install-collection.sh`](scripts/install-collection.sh); an unknown name exits with an error before creating the target directory.
+
+Run `python3 -m unittest discover -s tests -v` on a machine with Bash to verify each collection against the catalog and source file bytes using temporary installation targets. These checks do not install into a real Hermes profile. Existing target files may still be replaced; interrupted copies are not rolled back.
 
 ## Repository layout
 
